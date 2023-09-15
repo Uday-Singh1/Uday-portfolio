@@ -181,37 +181,37 @@ class ScrollToTopButton {
         this.button = document.getElementById("scroll-to-top");
         if (this.button) {
             this.addEventListeners();
+            this.toggleVisibility(); // Voer de functie onmiddellijk uit bij het laden van de pagina
         }
     }
 
     addEventListeners() {
-        // Voeg een eventlistener toe om te detecteren wanneer er wordt gescrold
         window.addEventListener("scroll", () => this.toggleVisibility());
-
-        // Voeg een eventlistener toe om naar de bovenkant van de pagina te scrollen wanneer erop wordt geklikt
+        window.addEventListener("resize", () => this.toggleVisibility()); // Voeg een eventlistener toe voor schermformaatwijzigingen
         this.button.addEventListener("click", () => this.scrollToTop());
     }
 
     toggleVisibility() {
-        if (window.scrollY >= 0) {
-            this.button.style.display = "block"; // Toon de knop als je omlaag scrollt
+        const isSmallScreen = window.innerWidth <= 768; // Aanpassen aan gewenste schermgrootte
+        if (isSmallScreen || window.scrollY < 0) {
+            this.button.style.display = "none"; // Verberg de knop op kleinere schermen of wanneer bovenaan bent
         } else {
-            this.button.style.display = "none"; // Verberg de knop als je bovenaan bent
+            this.button.style.display = "block"; // Toon de knop in andere gevallen
         }
     }
 
     scrollToTop() {
         window.scrollTo({
             top: 0,
-            behavior: "smooth" // Scroll soepel naar boven
+            behavior: "smooth"
         });
     }
 }
 
-// Maak een nieuw ScrollToTopButton object als de knop aanwezig is
 document.addEventListener("DOMContentLoaded", function () {
     const scrollToTopButton = new ScrollToTopButton();
 });
+
 
 
 
