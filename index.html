@@ -24,6 +24,7 @@
                 <i class="fab fa-github"></i>
             </a>
         </div>
+        <!-- <a href="/index.html" class="header__button header__button--home">Thuis</a> -->
         <button class="header__button header__button--projects">Mijn Projecten</button>
         <button class="header__button header__button--about">Over Mij</button>
         <button class="header__button header__button--contact">Contact</button>
@@ -73,10 +74,10 @@
                 <li class="popup__section--right">
                     <article class="popup__text__container">
                         <h2 class="popup__title">Yubtub</h2>
-                        <p class="popup__description__youtube">Hier had ik een youtube clone gemaakt met de huiststyle van de Twitch streaming platform, gemaakt, ik had wel lokale video's gebruikt maar ben wel van plan om dit opnieuw te maken met echte video links van youtube, dit was helemaal gerenderd in javascript en het was wel uitdagend.</p>
+                        <p class="popup__description" id="js--language-desc-popup-1">Hier had ik een youtube clone gemaakt met de huiststyle van de Twitch streaming platform, gemaakt, ik had wel lokale video's gebruikt maar ben wel van plan om dit opnieuw te maken met echte video links van youtube, dit was helemaal gerenderd in javascript en het was wel uitdagend.</p>
                         <div class="popup__button__container">
-                            <a href="https://github.com/Uday-Singh1/Yubtub-frontend-m8" target="_blank" class="popup__button"><i class="fa-brands fa-github"></i> Bekijk de broncode </a>
-                            <a href="https://github.com/Uday-Singh1/Yubtub-frontend-m8" target="_blank" class="popup__button"><i class="fa-solid fa-globe"></i> Bekijk Live </a>
+                            <a href="https://github.com/Uday-Singh1/Yubtub-frontend-m8" target="_blank" class="popup__button" id="js--sourcecode--view"><i class="fa-brands fa-github"></i> Bekijk de broncode </a>
+                            <a href="https://github.com/Uday-Singh1/Yubtub-frontend-m8" target="_blank" class="popup__button" id="js--live--view"><i class="fa-solid fa-globe"></i> Bekijk Live </a>
                         </div>
                     </article>
                 </li>
@@ -115,7 +116,7 @@
                 <li class="popup__section--right">
                     <article class="popup__text__container">
                         <h2 class="popup__title">Udemy</h2>
-                        <p class="popup__description__youtube">In dit project had ik de voorpagina van populaire cursus website Udemy nagemaakt in html&css en js.</p>
+                        <p class="popup__description" id="js--language-desc-popup-2" >In dit project had ik de voorpagina van populaire cursus website Udemy nagemaakt in html&css en js.</p>
                         <div class="popup__button__container">
                             <a href="https://github.com/Uday-Singh1/Yubtub-frontend-m8" target="_blank" class="popup__button"><i class="fa-brands fa-github"></i> Bekijk de broncode </a>
                             <a href="https://github.com/Uday-Singh1/Yubtub-frontend-m8" target="_blank" class="popup__button"><i class="fa-solid fa-globe"></i> Bekijk Live </a>
@@ -156,8 +157,8 @@
                 </li>
                 <li class="popup__section--right">
                     <article class="popup__text__container">
-                        <h2 class="popup__title">Color</h2>
-                        <p class="popup__description__youtube">Hier nam ik inspiratie van mijn favoriete kleuren website, Colorhunt dus ik had mijn eigen colorpicker gemaakt.</p>
+                        <h2 class="popup__title">Colorpicker</h2>
+                        <p class="popup__description" id="js--language-desc-popup-3">Hier nam ik inspiratie van mijn favoriete kleuren website, Colorhunt dus ik had mijn eigen colorpicker gemaakt.</p>
                         <div class="popup__button__container">
                             <a href="https://github.com/Uday-Singh1/Yubtub-frontend-m8" target="_blank" class="popup__button"><i class="fa-brands fa-github"></i> Bekijk de broncode </a>
                             <a href="https://github.com/Uday-Singh1/Yubtub-frontend-m8" target="_blank" class="popup__button"><i class="fa-solid fa-globe"></i> Bekijk Live </a>
@@ -168,7 +169,7 @@
             </ul>
         </div>
         <!-- Voeg meer projecten toe zoals hierboven -->
-        <button class="view-more">Bekijk Meer</button>
+        <button class="view-more" id="js--view-more">Zie Meer</button>
     </section>
     
     
@@ -197,7 +198,7 @@
                     <p class="featured-project__description"  id="js--featured--description">
                         Dit is een geweldig project waar ik aan heb gewerkt. Het toont mijn vaardigheden op het gebied van Software en Hardware.
                     </p>
-                    <a href="https://github.com/Uday-Singh1/Radical-Ruimte" class="featured-project__button" target="_blank">Bekijk de broncode</a>
+                    <a href="https://github.com/Uday-Singh1/Radical-Ruimte" class="featured-project__button" id="js--featured-project__button" target="_blank">Bekijk de broncode</a>
                 </div>
             </div>
         </article>
@@ -247,14 +248,14 @@
     <section class="section section--contact">
      
         <form class="contact-form">
-            <h2 class="contact-form__title">Neem Contact Op</h2>
-            <label for="naam" class="contact-form__label">Naam:</label>
-            <input type="text" id="naam" name="naam" class="contact-form__input" required>
+            <h2 class="contact-form__title" id="js--contact--title">Neem Contact Op</h2>
+            <label for="naam" class="contact-form__label" id="js--contact--name">Naam:</label>
+            <input type="text" id="naam" name="naam"  class="contact-form__input" required>
     
-            <label for="email" class="contact-form__label">E-mail:</label>
+            <label for="email" class="contact-form__label" id="js--contact--mail">E-mail:</label>
             <input type="email" id="email" name="email" class="contact-form__input" required>
     
-            <label for="bericht" class="contact-form__label">Bericht:</label>
+            <label for="bericht" class="contact-form__label" id="js--contact--bericht">Bericht:</label>
             <textarea id="bericht" name="bericht" rows="4" class="contact-form__textarea" required></textarea>
     
             <button type="submit" class="contact-form__button">Verzenden</button>
@@ -267,13 +268,13 @@
     
     <footer class="footer">
         <div class="social-icons">
-            <a href="https://www.linkedin.com/in/jouw-linkedin" target="_blank" class="social-icon">
+            <a href="https://www.linkedin.com/in/uday-singh-8a5093252/" target="_blank" class="social-icon">
                 <i class="fab fa-linkedin"></i>
             </a>
-            <a href="mailto:voorbeeld@email.com" class="social-icon">
+            <a href="mailto:udaysngjobs@gmail.com" class="social-icon">
                 <i class="fas fa-envelope"></i>
             </a>
-            <a href="https://github.com/jouw-gebruikersnaam" target="_blank" class="social-icon">
+            <a href="https://github.com/Uday-Singh1" target="_blank" class="social-icon">
                 <i class="fab fa-github"></i>
             </a>
         </div>
