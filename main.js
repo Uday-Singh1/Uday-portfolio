@@ -204,7 +204,7 @@ class LanguageToggle {
 
             this.featuredtitle.textContent = "Uitgelicht project";
             this.featureddescription.textContent = "Dit is een geweldig project waar ik aan heb gewerkt. Het toont mijn vaardigheden op het gebied van Software en Hardware.";
-            this.featuredbutton.textContent = "Bekijk de Broncode";
+            this.featuredbutton.textContent = "Bekijk Broncode";
 
             this.skilldescription1.textContent = "Ik ben instaat om Semantische html code te schrijven en de codes goed te structuren voor een overzichtelijkere ervaring.";
             this.skilldescription2.textContent = "Ik ben heel erg fan van design dus ik kan me goed vinden in css,om niet alleen mooie elementen te maken maar ook mooie animaties.";
