@@ -8,7 +8,8 @@
           
     <title>My Projects</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="main.js" defer></script>
+    <!-- <script src="main.js" defer></script> -->
+    <script src="taal.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -24,11 +25,12 @@
                 <i class="fab fa-github"></i>
             </a>
         </div>
-        <a href="https://uday-singh1.github.io/Uday-portfolio/" class="header__button header__button--home">Thuis</a>
-        <button class="header__button header__button--projects">Mijn Projecten</button>
-        <button class="header__button header__button--about">Over Mij</button>
-        <button class="header__button header__button--contact">Contact</button>
-        <button class="header__button header__button--language" id="language-toggle">Taal</button>
+        <a href="/index.html" class="header__button header__button--home" id="home-link">Home</a>
+        <!-- <a href="https://uday-singh1.github.io/Uday-portfolio/" class="header__button header__button--home" id="home-link">Thuis</a> -->
+        <button class="header__button header__button--projects">My Projects</button>
+        <a href="index.html#about" class="header__button header__button--about">About Me</a>
+        <a href="index.html#contact" class="header__button header__button--contact">Contact</a>
+        <button class="header__button header__button--language" id="language-toggle">Language</button>
     </header>
 
     <main>
@@ -43,7 +45,7 @@
                             <i class="fab fa-github"></i>
                         </a>
                     </h2>
-                    <p class="project__description">Hier had ik een YouTube-kloon gemaakt met de huisstijl van het Twitch-streamingplatform.</p>
+                    <p class="project__description">Here I made a YouTube clone with the house style of the Twitch streaming platform.</p>
                 </div>
             </article>
     
@@ -64,10 +66,10 @@
                     <li class="popup__section--right">
                         <article class="popup__text__container">
                             <h2 class="popup__title">Yubtub</h2>
-                            <p class="popup__description" id="js--language-desc-popup-1">Hier had ik een youtube clone gemaakt met de huiststyle van de Twitch streaming platform, gemaakt, ik had wel lokale video's gebruikt maar ben wel van plan om dit opnieuw te maken met echte video links van youtube, dit was helemaal gerenderd in javascript en het was wel uitdagend.</p>
+                            <p class="popup__description" id="js--language-desc-popup-1">Here I made a YouTube clone with the house style of the Twitch streaming platform.</p>
                             <div class="popup__button__container">
-                                <a href="https://github.com/Uday-Singh1/Yubtub-frontend-m8" target="_blank" class="popup__button"><i class="fa-brands fa-github"></i> Bekijk de broncode </a>
-                                <a href="https://github.com/Uday-Singh1/Yubtub-frontend-m8" target="_blank" class="popup__button"><i class="fa-solid fa-globe"></i> Bekijk Live </a>
+                                <a href="https://github.com/Uday-Singh1/Yubtub-frontend-m8" target="_blank" class="popup__button" id="js--sourcecode--view1">View Sourcecode</a>
+                                <a href="https://uday-singh1.github.io/Yubtub-frontend-m8/" target="_blank" class="popup__button" id="js--live--view1">View Live</a>                            
                             </div>
                         </article>
                     </li>
@@ -80,11 +82,11 @@
                 <img src="img/udemy.webp" alt="Project 2" class="project__image">
                 <div class="project__info">
                     <h2 class="project__title">Udemy-Clone
-                        <a href="https://github.com/Uday-Singh1/Yubtub-frontend-m8" target="_blank" class="github-icon">
+                        <a href="https://github.com/Uday-Singh1/udemy-clone" target="_blank" class="github-icon">
                             <i class="fab fa-github"></i>
                         </a>
                     </h2>
-                    <p class="project__description" id="js--language-desc-1">In dit project had ik de voorpagina van populaire cursus website Udemy nagemaakt in html&css en js.</p>
+                    <p class="project__description" id="js--language-desc-1">In this project I recreated the front page of popular course website Udemy in HTML&CSS and JS.</p>
                 </div>
             </article>
     
@@ -106,10 +108,10 @@
                     <li class="popup__section--right">
                         <article class="popup__text__container">
                             <h2 class="popup__title">Udemy</h2>
-                            <p class="popup__description" id="js--language-desc-popup-2">In dit project had ik de voorpagina van populaire cursus website Udemy nagemaakt in html&css en js.</p>
+                            <p class="popup__description" id="js--language-desc-popup-2">In this project I recreated the front page of popular course website Udemy in HTML&CSS and JS.</p>
                             <div class="popup__button__container">
-                                <a href="https://github.com/Uday-Singh1/Yubtub-frontend-m8" target="_blank" class="popup__button"><i class="fa-brands fa-github"></i> Bekijk de broncode </a>
-                                <a href="https://github.com/Uday-Singh1/Yubtub-frontend-m8" target="_blank" class="popup__button"><i class="fa-solid fa-globe"></i> Bekijk Live </a>
+                                <a href="https://github.com/Uday-Singh1/udemy-clone" target="_blank" class="popup__button" id="js--sourcecode--view2">View Sourcecode</a>
+                                <a href="https://uday-singh1.github.io/udemy-clone/" target="_blank" class="popup__button" id="js--live--view2">View Live</a>
                             </div>
                         </article>
                     </li>
@@ -122,11 +124,11 @@
                 <div class="project__info">
                     <h2 class="project__title">
                         ColorPicker
-                        <a href="https://github.com/Uday-Singh1/Colorpicker" target="_blank" class="github-icon">
+                        <a href="https://github.com/Uday-Singh1/colorpicker-live/tree/main" target="_blank" class="github-icon">
                             <i class="fab fa-github"></i>
                         </a>
                     </h2>
-                    <p class="project__description"  id="js--language-desc-2">Hier nam ik inspiratie van mijn favoriete kleuren website, Colorhunt dus ik had mijn eigen colorpicker gemaakt.</p>
+                    <p class="project__description"  id="js--language-desc-2">Here I took inspiration from my favorite color website, Colorhunt so I made my own color picker.</p>
                 </div>
             </article>
     
@@ -148,10 +150,10 @@
                     <li class="popup__section--right">
                         <article class="popup__text__container">
                             <h2 class="popup__title">Colorpicker</h2>
-                            <p class="popup__description" id="js--language-desc-popup-3">Hier nam ik inspiratie van mijn favoriete kleuren website, Colorhunt dus ik had mijn eigen colorpicker gemaakt.</p>
+                            <p class="popup__description" id="js--language-desc-popup-3">Here I took inspiration from my favorite color website, Colorhunt so I made my own color picker.</p>
                             <div class="popup__button__container">
-                                <a href="https://github.com/Uday-Singh1/Yubtub-frontend-m8" target="_blank" class="popup__button"><i class="fa-brands fa-github"></i> Bekijk de broncode </a>
-                                <a href="https://github.com/Uday-Singh1/Yubtub-frontend-m8" target="_blank" class="popup__button"><i class="fa-solid fa-globe"></i> Bekijk Live </a>
+                                <a href="https://github.com/Uday-Singh1/colorpicker-live/tree/main" target="_blank" class="popup__button" id="js--sourcecode--view3">View Sourcecode</a>
+                                <a href="https://uday-singh1.github.io/colorpicker-live/" target="_blank" class="popup__button" id="js--live--view3">View Live</a>
                             </div>
                         </article>
                     </li>
@@ -164,11 +166,11 @@
                 <div class="project__info">
                     <h2 class="project__title">
                         Banky
-                        <a href="https://github.com/Uday-Singh1/Colorpicker" target="_blank" class="github-icon">
+                        <a href="https://github.com/Uday-Singh1/banky" target="_blank" class="github-icon">
                             <i class="fab fa-github"></i>
                         </a>
                     </h2>
-                    <p class="project__description"  id="js--language-desc-3">In dit project had ik een bank applicatie gemaakt met data dat uit de json was gehaald en werd getoond. </p>
+                    <p class="project__description"  id="js--language-desc-3">In this project I had created a banking application with data extracted from the json and displayed. </p>
                 </div>
             </article>
     
@@ -190,10 +192,10 @@
                     <li class="popup__section--right">
                         <article class="popup__text__container">
                             <h2 class="popup__title">Banky</h2>
-                            <p class="popup__description" id="js--language-desc-popup-4">In dit project had ik een bank applicatie gemaakt met data dat uit de json was gehaald en werd getoond.</p>
+                            <p class="popup__description" id="js--language-desc-popup-4">In this project I had created a banking application with data extracted from the json and displayed.</p>
                             <div class="popup__button__container">
-                                <a href="https://github.com/Uday-Singh1/Yubtub-frontend-m8" target="_blank" class="popup__button"><i class="fa-brands fa-github"></i> Bekijk de broncode </a>
-                                <a href="https://github.com/Uday-Singh1/Yubtub-frontend-m8" target="_blank" class="popup__button"><i class="fa-solid fa-globe"></i> Bekijk Live </a>
+                                <a href="https://github.com/Uday-Singh1/banky" target="_blank" class="popup__button" id="js--sourcecode--view4">View Sourcecode </a>
+                                <a href="https://uday-singh1.github.io/banky/" target="_blank" class="popup__button" id="js--live--view4">View Live</a>
                             </div>
                         </article>
                     </li>
@@ -202,15 +204,15 @@
             </div>
 
             <article class="project">
-                <img src="img/tulp.webp" alt="Project 3" class="project__image">
+                <img src="img/font-show.webp" alt="Project 3" class="project__image">
                 <div class="project__info">
                     <h2 class="project__title">
-                        Tulpreizen
-                        <a href="https://github.com/Uday-Singh1/Colorpicker" target="_blank" class="github-icon">
+                        Font-showcase
+                        <a href="https://github.com/Uday-Singh1/font-changer/tree/main" target="_blank" class="github-icon">
                             <i class="fab fa-github"></i>
                         </a>
                     </h2>
-                    <p class="project__description"  id="js--language-desc-4">Here i made a website fully dedicated to tulips since i live in the netherlands, i thought why not make a website that showcases one of it's most popular things</p>
+                    <p class="project__description"  id="js--language-desc-4">Here i had made a font changer where you put in a text and you will see the text in different font.</p>
                 </div>
             </article>
     
@@ -220,7 +222,7 @@
                 <ul class="popup__content">
                     <li class="popup__section--left">
                         <figure class="popup__figure">
-                            <img class="popup__image__size" src="img/tulp.webp" alt="Project 1">
+                            <img class="popup__image__size" src="img/font-show.webp" alt="Project 1">
                         </figure>
                         <div class="popup__languages">
                             <span class="popup__language-icon"><i class="fab fa-html5"></i></span>
@@ -231,11 +233,11 @@
                     </li>
                     <li class="popup__section--right">
                         <article class="popup__text__container">
-                            <h2 class="popup__title">Tulpreizen</h2>
-                            <p class="popup__description" id="js--language-desc-popup-5">Hier nam ik inspiratie van mijn favoriete kleuren website, Colorhunt dus ik had mijn eigen colorpicker gemaakt.</p>
+                            <h2 class="popup__title">Font-showcase</h2>
+                            <p class="popup__description" id="js--language-desc-popup-5">Here i had made a font changer where you put in a text and you will see the text in different font.</p>
                             <div class="popup__button__container">
-                                <a href="https://github.com/Uday-Singh1/Yubtub-frontend-m8" target="_blank" class="popup__button"><i class="fa-brands fa-github"></i> Bekijk de broncode </a>
-                                <a href="https://github.com/Uday-Singh1/Yubtub-frontend-m8" target="_blank" class="popup__button"><i class="fa-solid fa-globe"></i> Bekijk Live </a>
+                                <a href="https://github.com/Uday-Singh1/font-changer/tree/main" target="_blank" class="popup__button" id="js--sourcecode--view5"> View Sourcecode</a>
+                                <a href="https://uday-singh1.github.io/font-changer/" target="_blank" class="popup__button" id="js--live--view5">View Live</a>
                             </div>
                         </article>
                     </li>
@@ -249,11 +251,11 @@
                 <div class="project__info">
                     <h2 class="project__title">
                         Encrypter-Decrypter
-                        <a href="https://github.com/Uday-Singh1/Colorpicker" target="_blank" class="github-icon">
+                        <a href="https://github.com/Uday-Singh1/encrypter/tree/main" target="_blank" class="github-icon">
                             <i class="fab fa-github"></i>
                         </a>
                     </h2>
-                    <p class="project__description" id="js--language-desc-5">Hier nam ik inspiratie van mijn favoriete kleuren website, Colorhunt dus ik had mijn eigen colorpicker gemaakt.</p>
+                    <p class="project__description" id="js--language-desc-5">In this project I made an encrypter and decrypter, it is a fun and valuable project.</p>
                 </div>
             </article>
     
@@ -275,10 +277,10 @@
                     <li class="popup__section--right">
                         <article class="popup__text__container">
                             <h2 class="popup__title">Encrypter</h2>
-                            <p class="popup__description" id="js--language-desc-popup-6" >Hier nam ik inspiratie van mijn favoriete kleuren website, Colorhunt dus ik had mijn eigen colorpicker gemaakt.</p>
+                            <p class="popup__description" id="js--language-desc-popup-6" >In this project I made an encrypter and decrypter, it is a fun and valuable project.</p>
                             <div class="popup__button__container">
-                                <a href="https://github.com/Uday-Singh1/Yubtub-frontend-m8" target="_blank" class="popup__button"><i class="fa-brands fa-github"></i> Bekijk de broncode </a>
-                                <a href="https://github.com/Uday-Singh1/Yubtub-frontend-m8" target="_blank" class="popup__button"><i class="fa-solid fa-globe"></i> Bekijk Live </a>
+                                <a href="https://github.com/Uday-Singh1/encrypter/tree/main" target="_blank" class="popup__button" id="js--sourcecode--view6">View Sourcecode</a>
+                                <a href="https://uday-singh1.github.io/encrypter/" target="_blank" class="popup__button" id="js--live--view6">View Live</a>
                             </div>
                         </article>
                     </li>
@@ -302,7 +304,8 @@
                 <i class="fab fa-github"></i>
             </a>
         </div>
- </footer>
+  
+    </footer>
     
 </body>
 

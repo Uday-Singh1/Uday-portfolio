@@ -2,6 +2,8 @@ body{
     background: linear-gradient(to bottom, #102871, #c8c3c3);
 }
 
+
+
 .main{
     height: 100%;
     width: 100%;
@@ -76,7 +78,7 @@ body{
 
 
 
-/* Standaardstijlen voor desktop */
+
 .section--typing {
     text-align: center;
     padding: 2rem 0;
@@ -117,6 +119,18 @@ body{
 
     .typing {
         font-size: 1rem; /* Verminder de lettergrootte voor mobiel */
+    }
+
+
+    .header__button {
+        background: transparent;
+        border: none;
+        color: white;
+        margin: 1rem;
+        padding-right: 1.3rem;
+        cursor: pointer;
+        font-size: 1.4rem;
+
     }
 }
 
@@ -183,19 +197,22 @@ body{
 }
 
 .github-icon {
-    color: #333;
+    color: #ffffff;
     text-decoration: none;
+    transition: color 0.5s  ease-in-out; 
+
 }
 
 
 .github-icon i {
     font-size: 2.7rem;
-    color: #333; 
+    color: #ffffff; 
     transition: color 0.3s ease; 
 }
 
 .github-icon:hover i {
-    color: white; 
+    color: #006dfc; 
+    transform: scale(1.2);
 }
 
 
@@ -459,9 +476,10 @@ body.popup-open {
 
 /* Stijl voor de "Over Mij" sectie */
 .section--about {
-  
-    padding: 6rem;
+    padding: 4rem; /* Aangepaste boven- en onderpadding */
     text-align: center;
+    margin-top: -12rem; /* Aangepaste negatieve bovenmarge om omhoog te verschuiven */
+ 
 }
 
 .about {
@@ -470,11 +488,11 @@ body.popup-open {
     background-color: rgba(7, 128, 169, 0.741); 
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding:4rem;
-    color: white; 
+    padding: 4rem;
+    color: white;
+
+
 }
-
-
 
 .about__title {
     font-size: 3rem;
@@ -484,11 +502,11 @@ body.popup-open {
 }
 
 .about__image {
-    max-width: 100%; /* Hiermee zorg je ervoor dat de afbeelding nooit groter is dan de oorspronkelijke grootte */
-    height: 20rem; /* Behoudt de oorspronkelijke hoogte-breedteverhouding van de afbeelding */
-    width: 20rem; /* Pas de breedte van de afbeelding aan zoals gewenst */
+    max-width: 100%;
+    height: 20rem;
+    width: 20rem;
     border-radius: 50%;
-    border: groove black 0.9rem ;
+    border: groove black 0.9rem;
     margin-bottom: 2rem;
 }
 
@@ -497,10 +515,10 @@ body.popup-open {
     line-height: 1.5;
     color: white;
     font-family: sans-serif;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 
-.mijn__cv__button{
+.mijn__cv__button {
     padding: 1rem 2rem;
     gap: 3rem;
     background-color: #00b9fc;
@@ -512,6 +530,8 @@ body.popup-open {
     font-family: sans-serif;
     text-decoration: none;
     transition: background-color 0.3s ease;
+
+
 }
 
 .mijn__cv__button:hover {
@@ -521,8 +541,8 @@ body.popup-open {
 
 
 .section--featured-project {
-    max-width: 1000px;
-    height: 600px; /* Aangepaste hoogte */
+    max-width: 64%;
+    height: auto; /* Aangepaste hoogte */
     margin: 0 auto;
     padding: 4rem;
     background-color: rgba(7, 128, 169, 0.741); 
@@ -530,7 +550,7 @@ body.popup-open {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin: 0 auto; 
 }
@@ -544,7 +564,7 @@ body.popup-open {
 }
 
 .featured-project__title {
-    font-size: 3rem;
+    font-size: 2.6rem;
     margin: 0 0 1rem;
     color: white;
     font-family: sans-serif;
@@ -553,30 +573,33 @@ body.popup-open {
 }
 
 .featured-project__image {
-    max-width: 60%; 
-    height: auto; 
+    width: 50%;
+    height:auto; 
     border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
 .featured-project__description {
     font-family: sans-serif;
+    font-size: 2.1rem;
     padding-bottom: 1.5rem; 
+    margin-top: 1rem;
+    margin-bottom: 2rem; /* Voeg meer ruimte toe onder de beschrijving */
 }
-
 
 .featured-project__button {
     padding: 1rem 2rem;
     background-color: #00b9fc;
     color: white;
-    font-size: 2.2rem;
+    font-size: 2rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 1rem;
+    margin-top: 1rem; /* Verminder de bovenste marge om de ruimte tussen de beschrijving en de knop te vergroten */
     font-family: sans-serif;
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
+
 
 
 
@@ -658,81 +681,49 @@ body.popup-open {
 
 
 
-/* Stijl voor het contactformulier */
-/* Voeg een achtergrondafbeelding toe voor de sectie */
 .section--contact {
-    background-image: url('achtergrondafbeelding.jpg');
     background-size: cover;
     background-position: center;
-    padding: 5rem 0; /* Voeg boven- en ondermarge toe voor ruimte */
+    padding: 5rem 0;
+    text-align: center;
+    color: white;
 }
 
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 800px; /* Vergroot de maximale breedte */
-    margin: 0 auto; /* Horizontaal centreren */
+.contact-info {
+    max-width: 800px;
+    margin: 0 auto;
     padding: 3rem;
-    background-color: rgba(7, 128, 169, 0.741);
-    border-radius: 10px; /* Maak de hoeken ronder */
+    background-color: rgba(4, 150, 199, 0.741);
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     font-family: sans-serif;
-    transform: scale(1);
-    transition: transform 0.3s ease; /* Voeg een schaalovergang toe */
-}
-
-.contact-form:hover {
-    transform: scale(1.02); /* Vergroot het formulier bij hover */
 }
 
 .contact-form__title {
     font-size: 2.5rem;
     margin: 0;
-    padding-bottom: 2rem; /* Verminder de onderste padding */
+    padding-bottom: 2rem;
     text-align: center;
-    color: white;
 }
 
-.contact-form__label {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    color: white;
+.contact-info__item i {
+    margin-right: 0.5rem;
+    font-size: 2.8rem;
 }
 
-.contact-form__input,
-.contact-form__textarea,
-.contact-form__button {
-    width: 100%;
-    padding: 1rem; 
-    border-radius: 10px;
-    font-size: 1.9rem; 
-    margin-bottom: 1.5rem; 
-    color: rgb(0, 0, 0);
-    opacity: 0.9;
-    transition: opacity 0.3s ease; 
+.contact-info__item {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s, transform 0.3s;
+    display: block; /* Zorg ervoor dat de links blokken zijn voor volledige breedte */
+    margin-bottom: 1rem; /* Geef wat onderlinge ruimte tussen de contactgegevens */
 }
 
-.contact-form__input:focus,
-.contact-form__textarea:focus {
-    opacity: 1; 
-}
-
-.contact-form__button {
-    background-color: #00b9fc;
-    color: #fff;
-    border: none;
+.contact-info__item:hover {
     cursor: pointer;
-    transition: background-color 0.3s;
+    color: #006dfc;
+    transform: scale(1.1);
 }
-
-.contact-form__button:hover {
-    background-color: #0095d9; /* Verander de achtergrondkleur bij hover */
-}
-
-
-
 
 
 /* Stijl voor de footer */

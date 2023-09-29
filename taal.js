@@ -57,11 +57,14 @@ class LanguageToggle {
     constructor() {
         this.languageToggle = document.getElementById("language-toggle");
         this.headerTitle = document.querySelector(".header__title");
-        // this.homeBtn = document.querySelector(".header__button--home")
+        this.homeBtn = document.querySelector(".header__button header__button--home")
         this.contactBtn = document.querySelector(".header__button--contact");
         this.projectsButton = document.querySelector(".header__button--projects");
         this.aboutButton = document.querySelector(".header__button--about");
-      
+    
+        this.homeLink = document.getElementById("home-link");
+
+
 
         this.projectdescription = document.querySelector(".project__description");
         this.projectdescription2 = document.getElementById("js--language-desc-1");
@@ -78,6 +81,23 @@ class LanguageToggle {
         this.popupdescription5 = document.getElementById("js--language-desc-popup-5");
         this.popupdescription6 = document.getElementById("js--language-desc-popup-6");
 
+
+        this.popupcodebutton1 = document.getElementById("js--sourcecode--view1");
+        this.popupcodebutton2 = document.getElementById("js--sourcecode--view2");
+        this.popupcodebutton3 = document.getElementById("js--sourcecode--view3");
+        this.popupcodebutton4 = document.getElementById("js--sourcecode--view4");
+        this.popupcodebutton5 = document.getElementById("js--sourcecode--view5");
+        this.popupcodebutton6 = document.getElementById("js--sourcecode--view6");
+
+        this.popuplivebutton1 = document.getElementById("js--live--view1");
+        this.popuplivebutton2 = document.getElementById("js--live--view2");
+        this.popuplivebutton3 = document.getElementById("js--live--view3");
+        this.popuplivebutton4 = document.getElementById("js--live--view4");
+        this.popuplivebutton5 = document.getElementById("js--live--view5");
+        this.popuplivebutton6 = document.getElementById("js--live--view6");
+
+
+     
 
         this.abouttitle = document.getElementById("js--about--title");
         this.aboutdescription = document.getElementById("js--about--description");
@@ -107,67 +127,119 @@ class LanguageToggle {
     toggleLanguage() {
         if (this.languageToggle.textContent === "Taal") {
             this.languageToggle.textContent = "Language";
-            this.headerTitle.textContent = "Uday Singh";
+            this.headerTitle.textContent = "UDAY SINGH";
             this.projectsButton.textContent = "My Projects";
             this.aboutButton.textContent = "About Me";
             this.contactBtn.textContent = "Contact";
-            // this.homeBtn.textContent = "Home";
+
+            this.homeLink.textContent = "Home";
 
             this.projectdescription.textContent = "Here I made a YouTube clone with the house style of the Twitch streaming platform.";
             this.projectdescription2.textContent = "In this project I recreated the front page of popular course website Udemy in HTML&CSS and JS.";
             this.projectdescription3.textContent = "Here I took inspiration from my favorite color website, Colorhunt so I made my own color picker.";
             this.projectdescription4.textContent = "In this project I had created a banking application with data extracted from the json and displayed.";
-            this.projectdescription5.textContent = "Here i made a website fully dedicated to tulips since i live in the netherlands, i thought why not make a website that showcases one of it's most popular things.";
+            this.projectdescription5.textContent = "Here i had made a font changer where you put in a text and you will see the text in different font.";
             this.projectdescription6.textContent = "In this project I made an encrypter and decrypter, it is a fun and valuable project.";
             
             this.popupdescription1.textContent = "Here I made a YouTube clone with the house style of the Twitch streaming platform.";
             this.popupdescription2.textContent = "In this project I recreated the front page of popular course website Udemy in HTML&CSS and JS";
             this.popupdescription3.textContent = "Here I took inspiration from my favorite color website, Colorhunt so I made my own color picker.";
             this.popupdescription4.textContent = "In this project I had created a banking application with data extracted from the json and displayed.";
-            this.popupdescription5.textContent = "Here i made a website fully dedicated to tulips since i live in the netherlands, i thought why not make a website that showcases one of it's most popular things.";
+            this.popupdescription5.textContent = "Here i had made a font changer where you put in a text and you will see the text in different font.";
             this.popupdescription6.textContent = "In this project I made an encrypter and decrypter, it is a fun and valuable project.";
 
-            this.viewmorebutton.textContent = "View More";
-            this.mycvbutton.textContent = "My CV";
-            this.contactformbutton.textContent = "Send";
-            this.contactformmessage.textContent = "Message:";
-            // this.typedtext.textContent = "Uday Singh - SoftwareDeveloper";
-            this.abouttitle.textContent = "About Me";
-            this.aboutdescription.textContent = "I am a passionate software developer. My expertise includes HTML, CSS, JavaScript and other modern web technologies.";
-            this.featuredtitle.textContent = "Featured Project"
-            this.featureddescription.textContent = "This is an awesome project I've been working on. It shows my skills in Software and Hardware."
+            this.popupcodebutton1.textContent = "View Sourcecode";
+            this.popuplivebutton1.textContent = "View Live";
+
+        
+            this.popupcodebutton2.textContent = "View Sourcecode";
+            this.popuplivebutton2.textContent = "View Live";
 
 
-            this.skilldescription1.textContent = "I am able to write Semantic HTML code and structure the codes well for a clearer experience.";
-            this.skilldescription2.textContent = "I'm a big fan of design, so I really like CSS, not only creating beautiful elements but also beautiful animations.";
-            this.skilldescription3.textContent = "Scss has taught me how to divide my CSS and therefore work on my projects in a categorized manner.";
-            this.skilldescription4.textContent = "I find JavaScript very interesting, especially because of the countless possibilities it offers, it really takes your project to a completely different level and it is really a challenge sometimes, which I like.";
-            this.skilldescription5.textContent = "I am a big fan of designing, I always try to make everything as unique as possible so that it really radiates my personality, of course I can work well if there are requirements for the design in terms of layout.";
-            this.skilldescription6.textContent = "In my spare time, in addition to programming, I also often work on video/photo editing, mainly with Adobe After Effects and Premiere Pro, I really enjoy making those types of projects.";
+            this.popupcodebutton3.textContent = "View Sourcecode";
+            this.popuplivebutton3.textContent = "View Live";
+
+
+            this.popupcodebutton4.textContent = "View Sourcecode";
+            this.popuplivebutton4.textContent = "View Live";
+
+
+            this.popupcodebutton5.textContent = "View Sourcecode";
+            this.popuplivebutton5.textContent = "View Live";
+
+
+            this.popupcodebutton6.textContent = "View Sourcecode";
+            this.popuplivebutton6.textContent = "View Live";
+
+          
+
+
+
+
+            
+            // this.viewmorebutton.textContent = "View More";
+            // this.mycvbutton.textContent = "My CV";
+            // this.contactformbutton.textContent = "Send";
+            // this.contactformmessage.textContent = "Message:";
+            // // this.typedtext.textContent = "Uday Singh - SoftwareDeveloper";
+            // this.abouttitle.textContent = "About Me";
+            // this.aboutdescription.textContent = "I am a passionate software developer. My expertise includes HTML, CSS, JavaScript and other modern web technologies.";
+            // this.featuredtitle.textContent = "Featured Project"
+            // this.featureddescription.textContent = "This is an awesome project I've been working on. It shows my skills in Software and Hardware."
+
+
+            // this.skilldescription1.textContent = "I am able to write Semantic HTML code and structure the codes well for a clearer experience.";
+            // this.skilldescription2.textContent = "I'm a big fan of design, so I really like CSS, not only creating beautiful elements but also beautiful animations.";
+            // this.skilldescription3.textContent = "Scss has taught me how to divide my CSS and therefore work on my projects in a categorized manner.";
+            // this.skilldescription4.textContent = "I find JavaScript very interesting, especially because of the countless possibilities it offers, it really takes your project to a completely different level and it is really a challenge sometimes, which I like.";
+            // this.skilldescription5.textContent = "I am a big fan of designing, I always try to make everything as unique as possible so that it really radiates my personality, of course I can work well if there are requirements for the design in terms of layout.";
+            // this.skilldescription6.textContent = "In my spare time, in addition to programming, I also often work on video/photo editing, mainly with Adobe After Effects and Premiere Pro, I really enjoy making those types of projects.";
         } else {
             this.languageToggle.textContent = "Taal";
-            this.headerTitle.textContent = "Uday Singh";
+            this.headerTitle.textContent = "UDAY SINGH";
             this.projectsButton.textContent = "Mijn Projecten";
             this.aboutButton.textContent = "Over Mij";
             this.contactBtn.textContent = "Contact";
-            // this.homeBtn.textContent = "Thuis";
+
+            this.homeLink.textContent = "Thuis";
            
 
             this.projectdescription.textContent = "Hier had ik een youtube clone gemaakt met de huiststyle van de Twitch streaming platform.";
             this.projectdescription2.textContent = "In dit project had ik de voorpagina van populaire cursus website Udemy nagemaakt in html&css en js.";
             this.projectdescription3.textContent = "Hier nam ik inspiratie van mijn favoriete kleuren website, Colorhunt dus ik had mijn eigen colorpicker gemaakt.";
             this.projectdescription4.textContent = "In dit project had ik een bank applicatie gemaakt met data dat uit de json was gehaald en werd getoond.";
-            this.projectdescription5.textContent = "Hier heb ik een website gemaakt die volledig gewijd is aan tulpen, aangezien ik in Nederland woon. Ik dacht: waarom zou ik niet een website maken die een van de meest populaire dingen laat zien?.";
+            this.projectdescription5.textContent = "Hier had ik een lettertypewisselaar gemaakt waarin je een tekst invoert en je de tekst in een ander lettertype ziet.";
             this.projectdescription6.textContent = "In dit project heb ik een encrypter en decrypter gemaakt, het is een leuke en waardevolle project.";
  
             this.popupdescription1.textContent = "Hier had ik een youtube clone gemaakt met de huiststyle van de Twitch streaming platform."
             this.popupdescription2.textContent = "In dit project had ik de voorpagina van populaire cursus website Udemy nagemaakt in html&css en js."
             this.popupdescription3.textContent = "Hier nam ik inspiratie van mijn favoriete kleuren website, Colorhunt dus ik had mijn eigen colorpicker gemaakt."
             this.popupdescription4.textContent = "In dit project had ik een bank applicatie gemaakt met data dat uit de json was gehaald en werd getoond"
-            this.popupdescription5.textContent = "Hier heb ik een website gemaakt die volledig gewijd is aan tulpen, aangezien ik in Nederland woon. Ik dacht: waarom zou ik niet een website maken die een van de meest populaire dingen laat zien?."
+            this.popupdescription5.textContent = "Hier had ik een lettertypewisselaar gemaakt waarin je een tekst invoert en je de tekst in een ander lettertype ziet."
             this.popupdescription6.textContent = "In dit project heb ik een encrypter en decrypter gemaakt, het is een leuke en waardevolle project."
 
+            this.popupcodebutton1.textContent = "Bekijk De Broncode";
+            this.popuplivebutton1.textContent = "Bekijk Live";
 
+
+            this.popupcodebutton2.textContent = "Bekijk De Broncode";
+            this.popuplivebutton2.textContent = "Bekijk Live";
+
+
+            this.popupcodebutton3.textContent = "Bekijk De Broncode";
+            this.popuplivebutton3.textContent = "Bekijk Live";
+
+
+            this.popupcodebutton4.textContent = "Bekijk De Broncode";
+            this.popuplivebutton4.textContent = "Bekijk Live";
+
+
+            this.popupcodebutton5.textContent = "Bekijk De Broncode";
+            this.popuplivebutton5.textContent = "Bekijk Live";
+
+
+            this.popupcodebutton6.textContent = "Bekijk De Broncode";
+            this.popuplivebutton6.textContent = "Bekijk Live";
 
 
             this.viewmorebutton.textContent = "Zie Meer";
@@ -197,28 +269,28 @@ window.addEventListener("load", () => {
 });
 
 
-class ButtonHandler {
-    constructor(buttonId, targetPage) {
-        this.button = document.getElementById("js--view-more");
+// class ButtonHandler {
+//     constructor(buttonId, targetPage) {
+//         this.button = document.getElementById("js--view-more");
         
 
-      this.targetPage = targetPage;
-      this.addClickHandler();
-    }
+//       this.targetPage = targetPage;
+//       this.addClickHandler();
+//     }
   
-    addClickHandler() {
-      this.button.addEventListener("click", () => {
-        this.navigateToPage();
-      });
-    }
+//     addClickHandler() {
+//       this.button.addEventListener("click", () => {
+//         this.navigateToPage();
+//       });
+//     }
   
-    navigateToPage() {
-      window.location.href = this.targetPage;
-    }
-  }
+//     navigateToPage() {
+//       window.location.href = this.targetPage;
+//     }
+//   }
   
 
-const bekijkMeerButton = new ButtonHandler("bekijk-meer", "projecten.html");
+// const bekijkMeerButton = new ButtonHandler("bekijk-meer", "projecten.html");
 
 
 class ScrollToTopButton {

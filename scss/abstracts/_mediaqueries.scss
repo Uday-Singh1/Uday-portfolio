@@ -30,6 +30,10 @@
 
 @media screen and (max-width: 62.5rem) {
 
+    body{
+
+        overflow-x: hidden;
+    }
     .scroll-to-top {
         display: none;
     }
@@ -71,12 +75,13 @@
     }
 
   .about {
-    max-width: 105%;
+    max-width: 100%;
     margin: 0 auto;
     background-color: rgba(7, 128, 169, 0.741); 
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     color: white; 
+    overflow-y: scroll;
 }
 
 .section--projects{
@@ -160,5 +165,45 @@
  
 }
 
+
+.about__description {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: white;
+    font-family: sans-serif;
+    margin-bottom: 1rem;
+  
+}
+
+.section--featured-project {
+    max-width: 80%;
+    height: auto; /* Aangepaste hoogte */
+    margin: 0 auto;
+    padding: 4rem;
+    background-color: rgba(7, 128, 169, 0.741); 
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+}
+
+.featured-project__image {
+    width: 20rem;
+    height: auto; 
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+
+
+.featured-project__button {
+ width: 5rem;
+ height: 5rem;
+    
+}
 
 }
