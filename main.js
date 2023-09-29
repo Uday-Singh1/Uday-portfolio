@@ -287,24 +287,22 @@ const bekijkMeerButton = new ButtonHandler("bekijk-meer", "projecten.html");
 class ScrollToTopButton {
     constructor() {
         this.button = document.getElementById("scroll-to-top");
-        if (this.button) {
-            this.addEventListeners();
-            this.toggleVisibility(); // Voer de functie onmiddellijk uit bij het laden van de pagina
-        }
+        this.addEventListeners();
+        this.toggleVisibility(); // Voer de functie onmiddellijk uit bij het laden van de pagina
     }
 
     addEventListeners() {
         window.addEventListener("scroll", () => this.toggleVisibility());
-        window.addEventListener("resize", () => this.toggleVisibility()); // Voeg een eventlistener toe voor schermformaatwijzigingen
+        window.addEventListener("resize", () => this.toggleVisibility());
         this.button.addEventListener("click", () => this.scrollToTop());
     }
 
     toggleVisibility() {
-        const isSmallScreen = window.innerWidth <= 768; // Aanpassen aan gewenste schermgrootte
-        if (isSmallScreen || window.scrollY < 0) {
-            this.button.style.display = "none"; // Verberg de knop op kleinere schermen of wanneer bovenaan bent
+        const isSmallScreen = window.innerWidth <= 768;
+        if (isSmallScreen || window.scrollY <= 0) { // Verander "<" naar "<=" om te activeren wanneer je helemaal bovenaan bent
+            this.button.style.display = "none";
         } else {
-            this.button.style.display = "block"; // Toon de knop in andere gevallen
+            this.button.style.display = "block";
         }
     }
 
@@ -315,5 +313,10 @@ class ScrollToTopButton {
         });
     }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const scrollToTopButton = new ScrollToTopButton();
+});
+
 
 
