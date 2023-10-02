@@ -141,12 +141,12 @@ class LanguageToggle {
             this.projectdescription5.textContent = "Here i had made a font changer where you put in a text and you will see the text in different font.";
             this.projectdescription6.textContent = "In this project I made an encrypter and decrypter, it is a fun and valuable project.";
             
-            this.popupdescription1.textContent = "Here I made a YouTube clone with the house style of the Twitch streaming platform.";
-            this.popupdescription2.textContent = "In this project I recreated the front page of popular course website Udemy in HTML&CSS and JS";
-            this.popupdescription3.textContent = "Here I took inspiration from my favorite color website, Colorhunt so I made my own color picker.";
-            this.popupdescription4.textContent = "In this project I had created a banking application with data extracted from the json and displayed.";
-            this.popupdescription5.textContent = "Here i had made a font changer where you put in a text and you will see the text in different font.";
-            this.popupdescription6.textContent = "In this project I made an encrypter and decrypter, it is a fun and valuable project.";
+            this.popupdescription1.textContent = "Here I had made a YouTube clone with the home style of the Twitch streaming platform, I had used local videos but I plan to recreate this with real video links from YouTube, this was completely rendered in JavaScript and it was quite challenging.";
+            this.popupdescription2.textContent = "In this project, my goal was to duplicate the primary webpage of Udemy, a well-known online course platform. Using HTML, CSS, and JavaScript, I meticulously recreated the look and functionality of Udemy's homepage. This hands-on project provided me with valuable insights into web development while allowing me to explore the design choices and interactive elements that make Udemy's website so popular.";
+            this.popupdescription3.textContent = "Here I was inspired by my favorite color website, Colorhunt. That's why I decided to make my own color picker. Using HTML, CSS and JavaScript, I've created a handy tool that makes it easy to choose and experiment with colors. This creative venture gave me the opportunity to develop my artistic side while developing my web development skills.";
+            this.popupdescription4.textContent = "In this project, I designed a banking application that displays data from a JSON source. Using this JSON data, I built a user-friendly banking interface, making it easier for users to access and interact with their account information. This project allowed me to enhance my skills in web development while creating a convenient tool for managing banking data.";
+            this.popupdescription5.textContent = "In this project, I created a simple yet fun tool that allows you to change the font of a text you input. When you enter your text, you can instantly see it displayed in various fonts. This project was a delightful exploration of font styles and coding, providing an enjoyable way to experiment with different text looks.";
+            this.popupdescription6.textContent = "In this project, I developed a tool that can both encrypt and decrypt messages. It's a project that combines fun and practicality, allowing users to encode and decode messages for various purposes. This endeavor not only provided an enjoyable coding experience but also offered valuable insights into data security and encryption techniques, making it a rewarding and educational project.";
 
             this.popupcodebutton1.textContent = "View Sourcecode";
             this.popuplivebutton1.textContent = "View Live";
