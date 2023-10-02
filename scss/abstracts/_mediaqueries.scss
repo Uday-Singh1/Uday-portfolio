@@ -117,9 +117,9 @@
     font-size: 3rem;
 }
 .popup__title {
-    font-size: 3rem;
+    font-size: 2.7rem;
     font-weight: bold;
-    padding-top: 2rem;
+    padding-top: 1.5rem;
     color: white;
     font-family: sans-serif;
     text-align: center;
@@ -127,24 +127,29 @@
   }
 
   .popup__description{
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-family: sans-serif;
     height: 51%;
-    padding-left: 1rem;
+    padding: 1rem;
     width: 100%;
-  }
-  
-  .popup__button__container{
-    display: flex;
-    gap: 5rem;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    font-size: 1.3rem;
-    padding: 2rem;
     text-align: center;
   }
-
+  
+  .popup__button__container {
+    display: flex;
+    gap: 5rem;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 2rem 1rem; /* Hier hebben we de bovenste padding vergroot naar 3rem */
+    text-align: center;
+    position: relative;
+    bottom: 3.6rem;
+  }
+  
+  
+  
   .skill-card {
     // flex: calc(30% - 1rem); 
     margin: 1rem;
