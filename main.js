@@ -128,8 +128,8 @@ class LanguageToggle {
             this.projectdescription3.textContent = "Here I took inspiration from my favorite color website, Colorhunt so I made my own color picker.";
 
             this.popupdescription1.textContent = "Here I had made a YouTube clone with the home style of the Twitch streaming platform, I had used local videos but I plan to recreate this with real video links from YouTube, this was completely rendered in JavaScript and it was quite challenging.";
-            this.popupdescription2.textContent = "In this project I recreated the front page of popular course website Udemy in HTML&CSS and JS.";
-            this.popupdescription3.textContent = "Here I took inspiration from my favorite color website, Colorhunt so I made my own color picker.";
+            this.popupdescription2.textContent = "In this project, my goal was to duplicate the primary webpage of Udemy, a well-known online course platform. Using HTML, CSS, and JavaScript, I meticulously recreated the look and functionality of Udemy's homepage. This hands-on project provided me with valuable insights into web development while allowing me to explore the design choices and interactive elements that make Udemy's website so popular.";
+            this.popupdescription3.textContent = "Here I was inspired by my favorite color website, Colorhunt. That's why I decided to make my own color picker. Using HTML, CSS and JavaScript, I've created a handy tool that makes it easy to choose and experiment with colors. This creative venture gave me the opportunity to develop my artistic side while developing my web development skills.";
 
             this.popupcodebutton1.textContent = "View Sourcecode";
             this.popuplivebutton1.textContent = "View Live";
@@ -180,9 +180,9 @@ class LanguageToggle {
             this.projectdescription2.textContent = "In dit project had ik de voorpagina van populaire cursus website Udemy nagemaakt in html&css en js.";
             this.projectdescription3.textContent = "Hier nam ik inspiratie van mijn favoriete kleuren website, Colorhunt dus ik had mijn eigen colorpicker gemaakt.";
 
-            this.popupdescription1.textContent = "Hier had ik een youtube clone gemaakt met de huiststyle van de Twitch streaming platform."
-            this.popupdescription2.textContent = "In dit project had ik de voorpagina van populaire cursus website Udemy nagemaakt in html&css en js."
-            this.popupdescription3.textContent = "Hier nam ik inspiratie van mijn favoriete kleuren website, Colorhunt dus ik had mijn eigen colorpicker gemaakt."
+            this.popupdescription1.textContent = "Hier had ik een YouTube-kloon gemaakt met de huisstijl van het Twitch-streamingplatform, ik had lokale video's gebruikt maar ik ben van plan dit opnieuw te maken met echte videolinks van YouTube, dit werd volledig weergegeven in JavaScript en het was een behoorlijke uitdaging."
+            this.popupdescription2.textContent = "In dit project was het mijn doel om de primaire webpagina van Udemy, een bekend online cursusplatform, te dupliceren. Met behulp van HTML, CSS en JavaScript heb ik het uiterlijk en de functionaliteit van de startpagina van Udemy minutieus nagebootst. Dit praktijkgerichte project gaf mij waardevolle inzichten in webontwikkeling en stelde mij in staat de ontwerpkeuzes en interactieve elementen te verkennen die de website van Udemy zo populair maken."
+            this.popupdescription3.textContent = "Hier liet ik me inspireren door mijn favoriete kleurenwebsite, Colorhunt. Daarom besloot ik mijn eigen colorpicker te maken. Met behulp van HTML, CSS en JavaScript heb ik een handige tool gecreëerd waarmee je gemakkelijk kleuren kunt kiezen en experimenteren. Deze creatieve onderneming gaf me de kans om mijn artistieke kant te uiten terwijl ik mijn webontwikkelingsvaardigheden verbeterde."
 
             this.popupcodebutton1.textContent = "Bekijk De Broncode";
             this.popuplivebutton1.textContent = "Bekijk Live";
