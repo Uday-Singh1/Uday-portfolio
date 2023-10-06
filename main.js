@@ -284,22 +284,40 @@ class ButtonHandler {
 const bekijkMeerButton = new ButtonHandler("bekijk-meer", "projecten.html");
 
 
+
+
 class ScrollToTopButton {
     constructor() {
         this.button = document.getElementById("scroll-to-top");
+        this.isPopupOpen = false;
         this.addEventListeners();
-        this.toggleVisibility(); // Voer de functie onmiddellijk uit bij het laden van de pagina
+        this.toggleVisibility();
     }
 
     addEventListeners() {
         window.addEventListener("scroll", () => this.toggleVisibility());
         window.addEventListener("resize", () => this.toggleVisibility());
         this.button.addEventListener("click", () => this.scrollToTop());
+
+        document.addEventListener("popupOpen", () => {
+            this.isPopupOpen = true;
+            this.toggleVisibility();
+        });
+        document.addEventListener("popupClose", () => {
+            this.isPopupOpen = false;
+            this.toggleVisibility();
+        });
     }
 
     toggleVisibility() {
         const isSmallScreen = window.innerWidth <= 768;
-        if (isSmallScreen || window.scrollY <= 0) { // Verander "<" naar "<=" om te activeren wanneer je helemaal bovenaan bent
+        const isAtTop = window.scrollY <= 0;
+        const isPopupOpen = this.isPopupOpen;
+
+        // Voeg een extra controle toe om te controleren of de gebruiker boven het "About Me"-gedeelte scrollt
+        const isAboveAboutSection = window.scrollY <= document.querySelector(".section--about").offsetTop;
+
+        if (isSmallScreen || isAtTop || isPopupOpen || isAboveAboutSection) {
             this.button.style.display = "none";
         } else {
             this.button.style.display = "block";
@@ -317,6 +335,14 @@ class ScrollToTopButton {
 document.addEventListener("DOMContentLoaded", function () {
     const scrollToTopButton = new ScrollToTopButton();
 });
+
+function openPopup() {
+    document.dispatchEvent(new Event("popupOpen"));
+}
+
+function closePopup() {
+    document.dispatchEvent(new Event("popupClose"));
+}
 
 
 
