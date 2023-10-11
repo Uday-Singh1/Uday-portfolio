@@ -1,11 +1,9 @@
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
     // Haal de knoppen op
     const projectsBtn = document.querySelector('.header__button--projects');
     const aboutBtn = document.querySelector('.header__button--about');
     const contactBtn = document.querySelector('.header__button--contact');
+    const moreBtn = document.querySelector('.landing__button');
 
     // Voeg scrollgedrag toe aan de knoppen
     projectsBtn.addEventListener('click', () => {
@@ -20,7 +18,10 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelector('.section--contact').scrollIntoView({ behavior: 'smooth' });
     });
 
-    // Voeg hier eventueel taalwisselfunctionaliteit toe
+    moreBtn.addEventListener('click', () => {
+        document.querySelector('.section--projects').scrollIntoView({ behavior: 'smooth' });
+    });
+
 });
 
 
