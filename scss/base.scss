@@ -152,6 +152,8 @@ body{
 }
 
 
+
+
 /* Stijl voor projecten met Flexbox */
 .section--projects {
     display: flex;
@@ -253,6 +255,18 @@ body{
 
 /* Responsive stijlen voor schermen kleiner dan 768px (mobiele apparaten) */
 @media screen and (max-width: 768px) {
+
+
+.landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    height: 55rem;
+    width: 100%;
+    color: white;
+    }
+    
     .view-more {
         
         font-size: 1.8rem; /* Verminder de lettergrootte voor mobiel */
