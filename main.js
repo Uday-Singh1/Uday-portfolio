@@ -234,29 +234,50 @@ class Typewriter {
         this.text = text;
         this.delay = delay;
         this.index = 0;
+        this.currentText = '';
         this.type();
     }
 
     type() {
         const currentText = this.text[this.index];
-        this.element.textContent = currentText.substring(0, this.element.textContent.length + 1);
-
-        if (this.element.textContent === currentText) {
-            // Stop met typen nadat de tekst is ingetypt zonder verder te wissen
-            return;
-        } else {
-            setTimeout(() => this.type(), this.delay);
+        if (this.currentText !== currentText) {
+            this.currentText = currentText.substring(0, this.currentText.length + 1);
         }
+
+        this.element.textContent = this.currentText;
+
+        if (this.currentText === currentText) {
+            this.index = (this.index + 1) % this.text.length;
+        }
+
+        setTimeout(() => this.type(), this.delay);
     }
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    const typewriterText = document.querySelector('.typing__text');
-    const text = ['UDAY SINGH - SOFTWARE DEVELOPER.'];
-    const delay = 100; // Stel de gewenste typsnelheid in (in milliseconden)
+    // Define the delay here
+    const delay = 100; // Set the desired typing speed (in milliseconds)
 
-    const typewriter = new Typewriter(typewriterText, text, delay);
+    // Add this code for the landing__text paragraph
+    const landingText = document.querySelector('#landing--text--language');
+    const landingTextContent = 'Hi, I am Uday Singh and I am a software developer.';
+    const landingTypewriter = new Typewriter(landingText, [landingTextContent], delay);
+
+    // Add this code to make the button fade in after the typewriter has finished typing
+    setTimeout(() => {
+        const landingButton = document.querySelector('.landing__button');
+        landingButton.style.opacity = 1;
+    }, landingTextContent.length * delay);
 });
+
+
+    // const typewriterText = document.querySelector('.typing__text');
+    // const text = ['UDAY SINGH - SOFTWARE DEVELOPER.'];
+    // const delay = 100; // Set the desired typing speed (in milliseconds)
+
+    // const typewriter = new Typewriter(typewriterText, text, delay);
+
+   
 
 
 
