@@ -65,6 +65,9 @@ class LanguageToggle {
 
         this.homeLink = document.getElementById("home-link");
 
+        this.landtext = document.getElementById("landing--text--language");
+        this.landButton = document.getElementById("landing--button--language");
+
         this.projectdescription = document.querySelector(".project__description");
         this.projectdescription2 = document.getElementById("js--language-desc-1");
         this.projectdescription3 = document.getElementById("js--language-desc-2");
@@ -123,7 +126,9 @@ class LanguageToggle {
             this.aboutButton.textContent = "About Me";
             this.contactButton.textContent = "Contact";
 
-            
+            this.landtext.textContent = "Hi, I am Uday Singh and I am a software developer.";
+            this.landButton.innerHTML = "See Projects <i class='fas fa-arrow-down'></i>"; 
+        
             this.projectdescription.textContent = "Here I made a YouTube clone with the house style of the Twitch streaming platform.";
             this.projectdescription2.textContent = "In this project I recreated the front page of popular course website Udemy in HTML&CSS and JS.";
             this.projectdescription3.textContent = "Here I took inspiration from my favorite color website, Colorhunt so I made my own color picker.";
@@ -175,6 +180,8 @@ class LanguageToggle {
             this.aboutButton.textContent = "Over Mij";
             this.contactButton.textContent = "Contact";
 
+            this.landtext.textContent = "Hi, Ik ben Uday Singh en ik ben een software developer.";
+            this.landButton.innerHTML = "Zie Projecten <i class='fas fa-arrow-down'></i>"; 
             // this.homeLink.textContent = "Thuis";
 
             this.projectdescription.textContent = "Hier had ik een youtube clone gemaakt met de huiststyle van de Twitch streaming platform.";
