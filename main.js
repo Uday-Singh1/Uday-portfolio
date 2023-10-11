@@ -236,47 +236,47 @@ window.addEventListener("load", () => {
 });
 
 
-class Typewriter {
-    constructor(element, text, delay) {
-        this.element = element;
-        this.text = text;
-        this.delay = delay;
-        this.index = 0;
-        this.currentText = '';
-        this.type();
-    }
+// class Typewriter {
+//     constructor(element, text, delay) {
+//         this.element = element;
+//         this.text = text;
+//         this.delay = delay;
+//         this.index = 0;
+//         this.currentText = '';
+//         this.type();
+//     }
 
-    type() {
-        const currentText = this.text[this.index];
-        if (this.currentText !== currentText) {
-            this.currentText = currentText.substring(0, this.currentText.length + 1);
-        }
+//     type() {
+//         const currentText = this.text[this.index];
+//         if (this.currentText !== currentText) {
+//             this.currentText = currentText.substring(0, this.currentText.length + 1);
+//         }
 
-        this.element.textContent = this.currentText;
+//         this.element.textContent = this.currentText;
 
-        if (this.currentText === currentText) {
-            this.index = (this.index + 1) % this.text.length;
-        }
+//         if (this.currentText === currentText) {
+//             this.index = (this.index + 1) % this.text.length;
+//         }
 
-        setTimeout(() => this.type(), this.delay);
-    }
-}
+//         setTimeout(() => this.type(), this.delay);
+//     }
+// }
 
-document.addEventListener('DOMContentLoaded', function () {
-    // Define the delay here
-    const delay = 100; // Set the desired typing speed (in milliseconds)
+// document.addEventListener('DOMContentLoaded', function () {
+//     // Define the delay here
+//     const delay = 100; // Set the desired typing speed (in milliseconds)
 
-    // Add this code for the landing__text paragraph
-    const landingText = document.querySelector('#landing--text--language');
-    const landingTextContent = 'Hi, I am Uday Singh and I am a software developer.';
-    const landingTypewriter = new Typewriter(landingText, [landingTextContent], delay);
+//     // Add this code for the landing__text paragraph
+//     const landingText = document.querySelector('#landing--text--language');
+//     const landingTextContent = 'Hi, I am Uday Singh and I am a software developer.';
+//     const landingTypewriter = new Typewriter(landingText, [landingTextContent], delay);
 
-    // Add this code to make the button fade in after the typewriter has finished typing
-    setTimeout(() => {
-        const landingButton = document.querySelector('.landing__button');
-        landingButton.style.opacity = 1;
-    }, landingTextContent.length * delay);
-});
+//     // Add this code to make the button fade in after the typewriter has finished typing
+//     setTimeout(() => {
+//         const landingButton = document.querySelector('.landing__button');
+//         landingButton.style.opacity = 1;
+//     }, landingTextContent.length * delay);
+// });
 
 
     // const typewriterText = document.querySelector('.typing__text');
