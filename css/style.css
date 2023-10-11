@@ -192,6 +192,22 @@ body {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+.landing__text,
+.landing__button {
+    animation: fadeIn 1s ease both; /* Voeg deze regel toe om de fade-in animatie toe te passen */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Optioneel: je kunt tekst laten bewegen tijdens het vervagen */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 
 
