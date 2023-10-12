@@ -157,7 +157,7 @@ class LanguageToggle {
             this.abouttitle.textContent = "About Me";
             this.aboutdescription.textContent = "I am a software developer with a passion for design and soccer. Quality is my top priority, and I am always willing to learn and grow. Outside of work, I enjoy my love for soccer, which motivates me and keeps me active. I am dedicated to delivering excellent results in everything I do.";
             this.featuredtitle.textContent = "Featured Project";
-            this.featureddescription.textContent = " In this project i made a room with a classmate and four other people from e-commerce design and spatial design, me and my classmate added hardware in the room such as touch and sound sensors that trigger the lighting in the room, the project took about tenn weeks.";
+            this.featureddescription.textContent = " In this project i made a room with a classmate and four other people from e-commerce design and spatial design, me and my classmate added hardware in the room such as touch and sound sensors that trigger the lighting in the room, the project took about ten weeks.";
             this.featuredbutton.textContent = "View Sourcecode";
 
 
@@ -211,7 +211,7 @@ class LanguageToggle {
             this.aboutdescription.textContent = "Ik ben een softwareontwikkelaar met een passie voor design en voetbal. Kwaliteit staat bij mij voorop, en ik ben altijd bereid om te leren en te groeien. Buiten mijn werk geniet ik van mijn liefde voor voetbal, wat me motiveert en in beweging houdt. Ik ben toegewijd aan het leveren van uitstekende resultaten in alles wat ik doe.";
 
             this.featuredtitle.textContent = "Uitgelicht project";
-            this.featureddescription.textContent = "In dit project heb ik samen met een klasgenoot en vier anderen van e-commerce design en ruimtelijk ontwerp een kamer gecreëerd. We hebben hardware, zoals aanraak- en geluidssensoren, toegevoegd die de verlichting in de kamer aansturen. Het project heeft ongeveer tienn weken geduurd.";
+            this.featureddescription.textContent = "In dit project heb ik samen met een klasgenoot en vier anderen van e-commerce design en ruimtelijk ontwerp een kamer gecreëerd. We hebben hardware, zoals aanraak- en geluidssensoren, toegevoegd die de verlichting in de kamer aansturen. Het project heeft ongeveer tien weken geduurd.";
             this.featuredbutton.textContent = "Bekijk Broncode";
 
             this.skilldescription1.textContent = "Ik ben instaat om Semantische html code te schrijven en de codes goed te structuren voor een overzichtelijkere ervaring.";
