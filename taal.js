@@ -147,7 +147,7 @@ class LanguageToggle {
             
             this.popupdescription4.textContent = "In a span of three weeks, I created a bank application, during which I deepened my knowledge of JSON and JavaScript. This project was a valuable learning experience in managing financial data and displaying it on the screen.";
             this.popupdescription5.textContent = "In about a week, working solo, I created a text input tool that lets you instantly view your text in various fonts. This project served as a delightful exploration of font styles and coding, while also enhancing my JavaScript skills.";
-            this.popupdescription6.textContent = "In this project, I developed a tool that can both encrypt and decrypt messages. It's a project that combines fun and practicality, allowing users to encode and decode messages for various purposes. This endeavor not only provided an enjoyable coding experience but also offered valuable insights into data security and encryption techniques, making it a rewarding and educational project.";
+            this.popupdescription6.textContent = "During this two-week project, where I worked alone, using the Caesar cipher method in JavaScript to create a tool for encrypting and decrypting messages, I also enhanced my JavaScript skills. It's both fun and practical, offering insights into data security and encryption techniques.";
 
             this.popupcodebutton1.textContent = "View Sourcecode";
             this.popuplivebutton1.textContent = "View Live";
@@ -218,7 +218,7 @@ class LanguageToggle {
             
             this.popupdescription4.textContent = "In een periode van drie weken heb ik een bankapplicatie ontwikkeld, waarbij ik mijn vaardigheden in JSON en JavaScript aanzienlijk heb verbeterd. Deze projectervaring heeft me waardevolle inzichten geboden in het beheer van financiële gegevens en het implementeren van deze informatie op het scherm."
             this.popupdescription5.textContent = "In ongeveer een week, in mijn eentje, heb ik een tekstinvoertool gemaakt waarmee je direct je tekst in verschillende lettertypen kunt bekijken. Dit project was een plezierige verkenning van lettertypestijlen en codering, en heeft mijn JavaScript-vaardigheden verder verbeterd."
-            this.popupdescription6.textContent = "Een ander interessant project dat ik heb gedaan, is het maken van een encryptie- en decryptietool. Hiermee kun je berichten coderen en decoderen, wat niet alleen leuk is, maar ook waardevol voor het begrijpen van beveiligingsconcepten."
+            this.popupdescription6.textContent = "Tijdens dit project van twee weken, waarbij ik in mijn eentje werkte en de Caesar-cijfermethode in JavaScript gebruikte om een tool te ontwikkelen voor het versleutelen en ontsleutelen van berichten, heb ik ook mijn JavaScript-vaardigheden verder verbeterd. Het is zowel leuk als praktisch en biedt inzichten in gegevensbeveiliging en versleutelingstechnieken."
 
             this.popupcodebutton1.textContent = "Bekijk De Broncode";
             this.popuplivebutton1.textContent = "Bekijk Live";
