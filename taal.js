@@ -217,7 +217,7 @@ class LanguageToggle {
             this.popupdescription3.textContent = "Geïnspireerd door Colorhunt, mijn favoriete kleurenwebsite, heb ik een eigen kleurenkiezer gemaakt met HTML, CSS en JavaScript. Dit project verbeterde mijn webontwikkelingsvaardigheden en liet me mijn artistieke kant verkennen. Binnen anderhalve week rondde ik het af dankzij waardevolle leerervaringen, helemaal alleen."
             
             this.popupdescription4.textContent = "In een periode van drie weken heb ik een bankapplicatie ontwikkeld, waarbij ik mijn vaardigheden in JSON en JavaScript aanzienlijk heb verbeterd. Deze projectervaring heeft me waardevolle inzichten geboden in het beheer van financiële gegevens en het implementeren van deze informatie op het scherm."
-            this.popupdescription5.textContent = "In een ander project heb ik een lettertypewisselaar ontwikkeld. Hiermee kun je een tekst invoeren en meteen bekijken hoe die tekst eruitziet in verschillende lettertypen. Het was een leuke uitdaging die me hielp mijn programmeervaardigheden verder te ontwikkelen."
+            this.popupdescription5.textContent = "In ongeveer een week, in mijn eentje, heb ik een tekstinvoertool gemaakt waarmee je direct je tekst in verschillende lettertypen kunt bekijken. Dit project was een plezierige verkenning van lettertypestijlen en codering, en heeft mijn JavaScript-vaardigheden verder verbeterd."
             this.popupdescription6.textContent = "Een ander interessant project dat ik heb gedaan, is het maken van een encryptie- en decryptietool. Hiermee kun je berichten coderen en decoderen, wat niet alleen leuk is, maar ook waardevol voor het begrijpen van beveiligingsconcepten."
 
             this.popupcodebutton1.textContent = "Bekijk De Broncode";
