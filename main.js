@@ -99,6 +99,8 @@ class LanguageToggle {
         this.skilldescription4 = document.getElementById("js--language--description--4");
         this.skilldescription5 = document.getElementById("js--language--description--5");
         this.skilldescription6 = document.getElementById("js--language--description--6");
+        this.skilldescription7 = document.getElementById("js--language--description--7");
+        this.skilldescription8 = document.getElementById("js--language--description--8");
         // this.typedtext = document.querySelector(".typing__text");
 
         this.viewmorebutton = document.querySelector(".view-more");
@@ -162,12 +164,14 @@ class LanguageToggle {
 
 
             this.skilldescription1.textContent = "I am able to write Semantic HTML code and structure the codes well for a clearer experience.";
-            this.skilldescription2.textContent = "I'm a big fan of design, so I really like CSS, not only creating beautiful elements but also beautiful animations.";
+            this.skilldescription2.textContent = "I'm a big fan of design, so I really like CSS, not only creating beautiful elements but also beautiful animations."
             this.skilldescription3.textContent = "Scss has taught me how to divide my CSS and therefore work on my projects in a categorized manner.";
-            this.skilldescription4.textContent ="I'm captivated by JavaScript's limitless potential to elevate projects to new heights, even when it presents challenging moments, which I enjoy.";
-            this.skilldescription5.textContent = "I am a big fan of designing, I always try to make everything as unique as possible so that it really radiates my personality, of course I can work well if there are requirements for the design in terms of layout.";
-            this.skilldescription6.textContent = "In my spare time, in addition to programming, I also often work on video/photo editing, mainly with Adobe After Effects and Premiere Pro, I really enjoy making those types of projects.";
-
+            this.skilldescription4.textContent = "I'm captivated by JavaScript's limitless potential to elevate projects to new heights, even when it presents challenging moments, which I enjoy.";
+            this.skilldescription5.textContent = "I feel that knowing atleast one framework goes a long way so i decided to learn react, i already have made some projects with react.";
+            this.skilldescription6.textContent = "I am trying to improve my php skills as much as possible since it is a very handy language to know, i have made a few projects.";
+            this.skilldescription7.textContent = "I am a big fan of designing, I always try to make everything as unique as possible so that it really radiates my personality, of course I can work well if there are requirements for the design in terms of layout.";
+            this.skilldescription8.textContent = "In my spare time, in addition to programming, I also often work on video/photo editing, mainly with Adobe After Effects and Premiere Pro, I really enjoy making those types of projects.";
+            
             this.contacttitle.textContent = "Contact Me";
             // this.contactname.textContent = "Name";
             // this.contactmail.textContent = "E-mail";
@@ -215,12 +219,14 @@ class LanguageToggle {
             this.featuredbutton.textContent = "Bekijk Broncode";
 
             this.skilldescription1.textContent = "Ik ben instaat om Semantische html code te schrijven en de codes goed te structuren voor een overzichtelijkere ervaring.";
-            this.skilldescription2.textContent = "Ik ben heel erg fan van design dus ik kan me goed vinden in css,om niet alleen mooie elementen te maken maar ook mooie animaties.";
+            this.skilldescription2.textContent = "Ik ben heel erg fan van design dus ik kan me goed vinden in css,om niet alleen mooie elementen te maken maar ook mooie animaties."
             this.skilldescription3.textContent = "Scss heeft me geleerd hoe ik mijn css kan verdelen en dus ook gecategoriseerd kan gaan werken aan mijn projecten.";
-            this.skilldescription4.textContent ="Ik ben gefascineerd door de onbegrensde mogelijkheden van JavaScript om projecten naar nieuwe hoogten te tillen, zelfs als het soms uitdagend is, wat ik leuk vind.";
-            this.skilldescription5.textContent = "Ik ben heel erg fan van designing, ik probeer alles altijd zo uniek mogelijk te maken dat het dus ook echt mijn personaliteit uitstraalt, uiteraard kan ik goed werken als er eisen zijn aan het design wat betreft opmaak.";
-            this.skilldescription6.textContent = "In mijn vrije tijd naast het programmeren ben ik ook vaak bezig met video/foto editing voornamelijk met Adobe After Effects en Premiere Pro, ik vind het heel erg leuk om ook dat soort projecten te maken.";
-
+            this.skilldescription4.textContent = "Ik vind javascript heel interresant, vooral wegens de ontelbare mogelijkheden dat het bied, het neemmt je project echt op een hele andere niveau en het is ook echt een uitdaging soms wat ik dus fijn vind.";
+            this.skilldescription5.textContent = "Ik heb het gevoel dat het kennen van ten minste één framework een lange weg gaat, dus besloot ik React te leren. Ik heb al een aantal projecten met React gemaakt.";
+            this.skilldescription6.textContent = "Ik probeer zoveel mogelijk mijn php vaardigheden te verbeteren aangezien het een hele handige taal is om te kennen en beheersen";
+            this.skilldescription7.textContent = "Ik ben heel erg fan van designing, ik probeer alles altijd zo uniek mogelijk te maken dat het dus ook echt mijn personaliteit uitstraalt, uiteraard kan ik goed werken als er eisen zijn aan het design wat betreft opmaak.";
+            this.skilldescription8.textContent = "In mijn vrije tijd naast het programmeren ben ik ook vaak bezig met video/foto editing voornamelijk met Adobe After Effects en Premiere Pro, ik vind het heel erg leuk om ook dat soort projecten te maken.";
+            
             this.contacttitle.textContent = "Neem contact op";
             // this.contactname.textContent = "Naam";
             // this.contactmail.textContent = "E-mail";
