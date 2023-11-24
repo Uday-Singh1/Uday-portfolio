@@ -223,7 +223,7 @@ class LanguageToggle {
             this.skilldescription3.textContent = "Scss heeft me geleerd hoe ik mijn css kan verdelen en dus ook gecategoriseerd kan gaan werken aan mijn projecten.";
             this.skilldescription4.textContent = "Ik vind javascript heel interresant, vooral wegens de ontelbare mogelijkheden dat het bied, het neemmt je project echt op een hele andere niveau en het is ook echt een uitdaging soms wat ik dus fijn vind.";
             this.skilldescription5.textContent = "Ik heb het gevoel dat het kennen van ten minste één framework een lange weg gaat, dus besloot ik React te leren. Ik heb al een aantal projecten met React gemaakt.";
-            this.skilldescription6.textContent = "Ik probeer zoveel mogelijk mijn php vaardigheden te verbeteren aangezien het een hele handige taal is om te kennen en beheersen";
+            this.skilldescription6.textContent = "Ik probeer zoveel mogelijk mijn php vaardigheden te verbeteren aangezien het een hele handige taal is om te kennen en beheersen.";
             this.skilldescription7.textContent = "Ik ben heel erg fan van designing, ik probeer alles altijd zo uniek mogelijk te maken dat het dus ook echt mijn personaliteit uitstraalt, uiteraard kan ik goed werken als er eisen zijn aan het design wat betreft opmaak.";
             this.skilldescription8.textContent = "In mijn vrije tijd naast het programmeren ben ik ook vaak bezig met video/foto editing voornamelijk met Adobe After Effects en Premiere Pro, ik vind het heel erg leuk om ook dat soort projecten te maken.";
             
